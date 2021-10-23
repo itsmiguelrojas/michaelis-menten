@@ -20,7 +20,7 @@ library(ggpubr)
 Vmax <- 1.23
 Km <- 2.57
 
-# Values for sustrate
+# Values for substrate
 s.concentration <- seq(0.1,30,0.1)
 
 # Values for velocity (Michaelis-Menten and Lineweaver-Burk)
