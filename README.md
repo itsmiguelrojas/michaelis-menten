@@ -1,6 +1,6 @@
 # Michaelis-Menten equation for reaction rate
 
-Michaelis-Menten equation is a well-known model in biochemistry for enzyme kinetics. This takes the concentration of a certain substrate <img src="https://render.githubusercontent.com/render/math?math=[S]" /> and maximum rate <img src="https://render.githubusercontent.com/render/math?math=V_{max}" /> to calculate the reaction rate:
+[Michaelis-Menten equation](https://doi.org/10.1111/febs.16124) is a well-known model in biochemistry for enzyme kinetics. This takes the concentration of a certain substrate <img src="https://render.githubusercontent.com/render/math?math=[S]" /> and maximum rate <img src="https://render.githubusercontent.com/render/math?math=V_{max}" /> to calculate the reaction rate:
 
 <img src="https://render.githubusercontent.com/render/math?math=v%20=%20\frac{V_{max}[S]}{K_M %2B [S]}" />
 
@@ -30,3 +30,7 @@ This function has **four arguments**:
 ## Plot example
 
 ![](https://github.com/itsmiguelrojas/michaelis-menten/blob/main/enzyme_velocity.svg)
+
+## References
+
+- Srinivasan, B. (2021), A guide to the Michaelis–Menten equation: steady state and beyond. *FEBS J*. https://doi.org/10.1111/febs.16124
