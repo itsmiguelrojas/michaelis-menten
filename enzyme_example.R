@@ -21,11 +21,16 @@ enzyme.constants
 x <- seq(0.1, 20, 0.1)
 y <- michaelis.eq(x, enzyme.constants[1], enzyme.constants[2])
 y2 <- michaelis.eq(x, Vmax = 6.84, Km = 5.22)
+y.linear <- michaelis.eq(x, enzyme.constants[1], enzyme.constants[2], linear = TRUE)
+y2.linear <- michaelis.eq(x, Vmax = 6.84, Km = 5.22, linear = TRUE)
 
 enzyme.pred.ideal <- data.frame(
   s.conc = x,
+  inv.s.conc = x^-1,
   rate.pred = y,
-  rate.ideal = y2
+  inv.rate.pred = y.linear,
+  rate.ideal = y2,
+  inv.rate.ideal = y2.linear
 )
 
 rm(x, y, y2)
@@ -47,9 +52,9 @@ mm.plot <- enzyme.pred.ideal %>%
 
 # Lineweaver-Burk plot
 lb.plot <- enzyme.pred.ideal %>%
-  ggplot(aes(x = s.conc^-1)) +
-  geom_line(aes(y = rate.pred^-1, color = 'Prediction'), lwd = 1.2) +
-  geom_line(aes(y = rate.ideal^-1, color = 'Real'), lwd = 1.2) +
+  ggplot(aes(x = inv.s.conc)) +
+  geom_line(aes(y = inv.rate.pred, color = 'Prediction'), lwd = 1.2) +
+  geom_line(aes(y = inv.rate.ideal, color = 'Real'), lwd = 1.2) +
   labs(
     x = expression("1/[S] (μM"^-1*")"),
     y = expression("1/V"["0"]*" (min/mol"^-10*")"),
