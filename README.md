@@ -6,7 +6,7 @@
 
 where <img src="https://render.githubusercontent.com/render/math?math=K_M" /> is the **Michaelis constant**.
 
-I made this R script to calculate the reaction rate via **Michaelis-Menten** and also with the possibility to use **Lineweaver-Burk** linearization:
+I made this R script to calculate the rate of the reaction via **Michaelis-Menten** and also with the possibility to use **Lineweaver-Burk** linearization:
 
 <img src="https://render.githubusercontent.com/render/math?math=\frac{1}{v}%20=%20\frac{K_M}{V_{max}}\frac{1}{[S]}%2B\frac{1}{V_{max}}" />
 
