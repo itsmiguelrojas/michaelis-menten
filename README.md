@@ -1,4 +1,4 @@
-# Michaelis-Menten equation for reaction rate
+﻿# Michaelis-Menten equation for reaction rate
 
 [Michaelis-Menten equation](https://doi.org/10.1111/febs.16124) is a well-known model in biochemistry for enzyme kinetics. This takes the concentration of a certain substrate <img src="https://render.githubusercontent.com/render/math?math=[S]" /> and maximum rate <img src="https://render.githubusercontent.com/render/math?math=V_{max}" /> to calculate the reaction rate:
 
@@ -45,7 +45,7 @@ This script has two functions: `michaelis.eq()` and `michaelisPredict()`.
 
 Here I loaded an spreadsheet with values for substrate concentration and rate of the reaction. I predicted <img src="https://render.githubusercontent.com/render/math?math=K_M" /> and <img src="https://render.githubusercontent.com/render/math?math=V_{max}" /> and plot graphs for both Michaelis-Menten and Lineweaver-Burk with predicted and real values. You can see an example in [enzyme_example.R](https://github.com/itsmiguelrojas/michaelis-menten/blob/main/enzyme_example.R).
 
-![](enzyme_rate.png)
+![](images/enzyme_rate.png)
 
 ## References
 
