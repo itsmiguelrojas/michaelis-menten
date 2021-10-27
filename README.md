@@ -39,7 +39,7 @@ This script has two functions: `michaelis.eq()` and `michaelisPredict()`.
 
 `michaelis.eq()` has five arguments:
 
-- **data**: Substrate concentration
+- **substrate**: Substrate concentration
 - **Vmax**: Maximum rate of the reaction
 - **Km**: Michaelis constant
 - **inh.factor**: Inhibition factor
