@@ -60,8 +60,8 @@ Here I loaded an spreadsheet with values for substrate concentration and rate of
 
 I also predicted and plot rates for **competitive** and **non-competitive** types of inhibition.
 
-<img src="images/enzyme_rate_nc.png" align="left" width="450"/>
-<img src="images/enzyme_rate_c.png" width="450"/>
+<img src="images/enzyme_rate_nc.png" />
+<img src="images/enzyme_rate_c.png" />
 
 You can see an example in [enzyme_example.R](https://github.com/itsmiguelrojas/michaelis-menten/blob/main/R/enzyme_example.R).
 
