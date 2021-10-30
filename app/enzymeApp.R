@@ -1,3 +1,17 @@
+# Load libraries if not installed
+# (Code by @dataprofessor (https://github.com/dataprofessor)
+# in https://github.com/dataprofessor/iris-r-heroku/blob/master/init.R.
+# Code edited)
+my_packages = c("shiny", "plotly")
+
+install_if_missing = function(p) {
+  if (p %in% rownames(installed.packages()) == FALSE) {
+    install.packages(p)
+  }
+}
+
+invisible(sapply(my_packages, install_if_missing))
+
 # Load libraries
 library(shiny)
 library(plotly)
