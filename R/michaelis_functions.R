@@ -1,5 +1,7 @@
 # Function for plotting enzyme rate
 michaelis.eq <- function(substrate, Vmax, Km, inh.factor = NULL, linear = FALSE){
+  substrate <- substrate[order(substrate)]
+  
   x <- 1/substrate
   m <- Km/Vmax
   b <- 1/Vmax

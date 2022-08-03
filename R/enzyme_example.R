@@ -1,5 +1,5 @@
 # Load functions
-source('michaelis_functions.R')
+source('R/michaelis_functions.R')
 
 # Load libraries
 library(readxl)
@@ -8,9 +8,9 @@ library(hrbrthemes)
 library(ggpubr)
 
 # Load data
-enzyme.act <- read_xlsx('enzyme_activity.xlsx', sheet = 'Example 1')
-enzyme.act.nc <- read_xlsx('enzyme_activity.xlsx', sheet = 'Non-competitive')
-enzyme.act.c <- read_xlsx('enzyme_activity.xlsx', sheet = 'Competitive')
+enzyme.act <- read_xlsx('R/enzyme_activity.xlsx', sheet = 'Example 1')
+enzyme.act.nc <- read_xlsx('R/enzyme_activity.xlsx', sheet = 'Non-competitive')
+enzyme.act.c <- read_xlsx('R/enzyme_activity.xlsx', sheet = 'Competitive')
 
 # Replace column names
 colnames(enzyme.act) <- c('s.conc', 'rate')

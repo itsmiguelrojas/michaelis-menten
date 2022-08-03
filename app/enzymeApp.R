@@ -48,9 +48,9 @@ server <- function(input, output){
   
   x <- reactive({
     if(input$viz == FALSE){
-      as.numeric(unlist(strsplit(input$substrate,",")))
+      as.numeric(unlist(strsplit(input$substrate,",")))[order(as.numeric(unlist(strsplit(input$substrate,","))))]
     } else {
-      as.numeric(unlist(strsplit(input$substrate,",")))^-1
+      (as.numeric(unlist(strsplit(input$substrate,",")))^-1)[order(as.numeric(unlist(strsplit(input$substrate,","))))]
     }
   })
   
