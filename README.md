@@ -73,7 +73,7 @@ I have created a [Shiny app](https://github.com/itsmiguelrojas/michaelis-menten/
 
 To open this app, follow these instructions:
 
-1. [Donwload and install R](https://cloud.r-project.org/) (RStudio is not necessary). If you can't or don't want to install the program, you can donwload [R Portable](https://sourceforge.net/projects/rportable/) and unpackage it in `app` folder.
+1. [Donwload and install R](https://cloud.r-project.org/) (RStudio is not necessary). If you can't or don't want to install the program, you can donwload [R Portable](https://sourceforge.net/projects/rportable/) and unpackage it in `app` folder. **NOTE**: you will also need to install `shiny`, `ggplot2` and `plotly` in order to the app to run.
 
 2. Open `executeApp.bat` and edit the third line containing the path to the `Rscript.exe`:
 
