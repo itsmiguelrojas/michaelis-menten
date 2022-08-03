@@ -17,7 +17,7 @@ library(shiny)
 library(plotly)
 
 # Load functions
-source('./R/michaelis_functions.R')
+source('../R/michaelis_functions.R')
 
 # User Interface
 
@@ -25,7 +25,7 @@ ui <- fluidPage(
   titlePanel('Michaelis-Menten Steady-State Kinetics'),
   sidebarLayout(
     sidebarPanel(
-      textInput('substrate', 'Substrate concentration (comma delimited and ordered)', value = c('1,3,5,8,10,15')),
+      textInput('substrate', 'Substrate concentration (comma delimited)', value = c('1,3,5,8,10,15')),
       numericInput('vmax', 'Max velocity', value = 0.9),
       numericInput('km', 'Michaelis constant', value = 3.42),
       radioButtons(
