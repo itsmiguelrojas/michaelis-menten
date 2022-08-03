@@ -73,11 +73,11 @@ I have created a [Shiny app](https://github.com/itsmiguelrojas/michaelis-menten/
 
 To open this app, follow these instructions:
 
-  1. [Donwload and install R](https://cloud.r-project.org/) (RStudio is not necessary). If you can't or don't want to install the program, you can donwload [R Portable](https://sourceforge.net/projects/rportable/) and unpackage it in `app` folder.
-  
-  2. Open `executeApp.bat` and edit the third line containing the path to the `Rscript.exe`:
-  
-    2.1. If you downloaded R from The R Project, this path is often `C:\Program Files\R\R-x.x.x\bin`. Check where you have installed R.
+1. [Donwload and install R](https://cloud.r-project.org/) (RStudio is not necessary). If you can't or don't want to install the program, you can donwload [R Portable](https://sourceforge.net/projects/rportable/) and unpackage it in `app` folder.
+
+2. Open `executeApp.bat` and edit the third line containing the path to the `Rscript.exe`:
+
+ - If you downloaded R from The R Project, this path is often `C:\Program Files\R\R-x.x.x\bin`. Check where you have installed R.
     
     ```{sh}
     @echo off
@@ -88,7 +88,7 @@ To open this app, follow these instructions:
     exit
     ```
     
-    2.2. If you downloaded R Portable and unpackaged it in `app` folder, the path is often `%~dp0\R-Portable\App\R-Portable\bin` (`%~dp0` calls dinamically for the path where the files are located).
+ - If you downloaded R Portable and unpackaged it in `app` folder, the path is often `%~dp0\R-Portable\App\R-Portable\bin` (`%~dp0` calls dinamically for the path where the files are located).
     
     ```{sh}
     @echo off
@@ -99,14 +99,14 @@ To open this app, follow these instructions:
     exit
     ```
   
-  3. Save the `.bat` file and run it. It should open a command line where you will see a port at the end like `http://127.0.0.1:xxxx`. Copy this port and paste in a web browser.
+3. Save the `.bat` file and run it. It should open a command line where you will see a port at the end like `http://127.0.0.1:xxxx`. Copy this port and paste in a web browser.
   
-  ![](images/command_line.png)
+![](images/command_line.png)
   
-  4. In the web browser, you will see an interface like this. You can visualize the plot as **hyperbole** or **line** and enter **Michaelis constant**, **Vmax** and **substrate concentrations**.
+4. In the web browser, you will see an interface like this. You can visualize the plot as **hyperbole** or **line** and enter **Michaelis constant**, **Vmax** and **substrate concentrations**.
   
-  ![](images/app_graph_hyperbole.png)
-  ![](images/app_graph_linear.png)
+![](images/app_graph_hyperbole.png)
+![](images/app_graph_linear.png)
 
 ## References
 
