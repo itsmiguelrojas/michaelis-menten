@@ -69,7 +69,7 @@ You can see an example in [enzyme_example.R](https://github.com/itsmiguelrojas/m
 
 ## Shiny application
 
-I have created a [Shiny app](https://github.com/itsmiguelrojas/michaelis-menten/tree/main/app) that opens in web browser. I made a `.bat` file and tested it on Windows only (the same should work for Linux via shell script `.sh` file).
+I have created a [Shiny app](https://github.com/itsmiguelrojas/michaelis-menten/tree/main/app) that opens in web browser. I made a `.bat` file and tested it on Windows only (the same should work for Linux via shell script `.sh` file if I could create the file).
 
 To open this app, follow these instructions:
 
