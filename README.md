@@ -1,24 +1,24 @@
 # Michaelis-Menten equation for reaction rate
 
-Michaelis-Menten equation<sup><a href="#ref1">1</a></sup> is a well-known model in biochemistry for enzyme kinetics. This takes the concentration of a certain substrate <img src="https://render.githubusercontent.com/render/math?math=[S]" /> and maximum rate <img src="https://render.githubusercontent.com/render/math?math=V_{max}" /> to calculate the reaction rate:
+Michaelis-Menten equation<sup><a href="#ref1">1</a></sup> is a well-known model in biochemistry for enzyme kinetics. This takes the concentration of a certain substrate $[S]$ and maximum rate $V_{max}$ to calculate the reaction rate:
 
-> <img src="https://render.githubusercontent.com/render/math?math=v%20=%20\frac{V_{max}[S]}{K_M %2B [S]}" />
+> $v=\frac{V_{max}[S]}{K_{M}\enspace+\enspace[S]}$
  
-where <img src="https://render.githubusercontent.com/render/math?math=K_M" /> is the **Michaelis constant**. When an inhibitor<sup><a href="#ref2">2</a></sup> enters into action, the equation above takes the form:
+where $K_{M}$ is the **Michaelis constant**. When an inhibitor<sup><a href="#ref2">2</a></sup> enters into action, the equation above takes the form:
 
-> <img src="https://render.githubusercontent.com/render/math?math=v%20=%20\frac{V_{max}[S]}{(1 %2B \frac{[I]}{K_I})K_M %2B [S]}" />
+> $v=\frac{V_{max}[S]}{\left(1\enspace+\enspace\frac{[I]}{K_I}\right)K_M\enspace+\enspace[S]}$
 
-where <img src="https://render.githubusercontent.com/render/math?math=K_I" /> is the **constant of inhibition** and <img src="https://render.githubusercontent.com/render/math?math=[I]" /> is the **inhibitor concentration**.
+where $K_{I}$ is the **constant of inhibition** and $[I]$ is the **inhibitor concentration**.
 
 I made this R script to calculate the rate of the reaction via **Michaelis-Menten** and also with the possibility to use **Lineweaver-Burk** linearization:
 
-> <img src="https://render.githubusercontent.com/render/math?math=\frac{1}{v}%20=%20\frac{K_M}{V_{max}}\frac{1}{[S]}%2B\frac{1}{V_{max}}" />
+> $\frac{1}{v}=\frac{K_M}{V_{max}}\cdot\frac{1}{[S]}+\frac{1}{V_{max}}$
 
 ... and
 
-> <img src="https://render.githubusercontent.com/render/math?math=\frac{1}{v}%20=%20(1 %2B \frac{[I]}{K_I})\frac{K_M}{V_{max}}\frac{1}{[S]}%2B\frac{1}{V_{max}}" />
+> $\frac{1}{v}=\left(1 + \frac{[I]}{K_I}\right)\frac{K_M}{V_{max}}\cdot\frac{1}{[S]}+\frac{1}{V_{max}}$
 
-When given rate in presence of the inhibitor and its corresponding concetration <img src="https://render.githubusercontent.com/render/math?math=[I]" />, you can predict <img src="https://render.githubusercontent.com/render/math?math=K_M" />, <img src="https://render.githubusercontent.com/render/math?math=K_I" />, **inhibition factor** <img src="https://render.githubusercontent.com/render/math?math=\alpha%20=%20 1 %2B \frac{[I]}{K_I}" /> and <img src="https://render.githubusercontent.com/render/math?math=V_{max}" /> (both for **inhibiton** and **no inhibition** when **non-competitive inhibition** is predicted).
+When given rate in presence of the inhibitor and its corresponding concetration $[I]$, you can predict $K_{M}$, $K_{I}$, **inhibition factor** $\alpha= 1 + \frac{[I]}{K_I}$ and $V_{max}$ (both for **inhibiton** and **no inhibition** when **non-competitive inhibition** is predicted).
 
 ## Import
 
@@ -56,7 +56,7 @@ This script has two functions: `michaelis.eq()` and `michaelisPredict()`.
 
 ## Plot examples
 
-Here I loaded an spreadsheet with values for substrate concentration and rate of the reaction. I predicted <img src="https://render.githubusercontent.com/render/math?math=K_M" /> and <img src="https://render.githubusercontent.com/render/math?math=V_{max}" /> and plot graphs for both Michaelis-Menten and Lineweaver-Burk with predicted and real values.
+Here I loaded an spreadsheet with values for substrate concentration and rate of the reaction. I predicted $K_{M}$ and $V_{max}$ and plot graphs for both Michaelis-Menten and Lineweaver-Burk with predicted and real values.
 
 ![](images/enzyme_rate.png)
 
